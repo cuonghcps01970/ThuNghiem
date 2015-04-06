@@ -40,6 +40,7 @@ Partial Class frmMain
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.lbltaikhoan = New System.Windows.Forms.Label()
         Me.ptbLogo = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.mnsMainMenu.SuspendLayout()
         Me.stsStatus.SuspendLayout()
         CType(Me.ptbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -193,6 +194,15 @@ Partial Class frmMain
         Me.ptbLogo.TabIndex = 6
         Me.ptbLogo.TabStop = False
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(330, 153)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 8
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -200,6 +210,7 @@ Partial Class frmMain
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.PowderBlue
         Me.ClientSize = New System.Drawing.Size(794, 571)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lbltaikhoan)
         Me.Controls.Add(Me.ptbLogo)
         Me.Controls.Add(Me.stsStatus)
@@ -240,5 +251,6 @@ Partial Class frmMain
    Friend WithEvents stsStatus As System.Windows.Forms.StatusStrip
    Friend WithEvents ToolStripStatusLabel1 As System.Windows.Forms.ToolStripStatusLabel
    Friend WithEvents ptbLogo As System.Windows.Forms.PictureBox
-   Friend WithEvents lbltaikhoan As System.Windows.Forms.Label
+    Friend WithEvents lbltaikhoan As System.Windows.Forms.Label
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class
